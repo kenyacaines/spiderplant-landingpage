@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🪴 House Plants</title>
+    </head>
+  <body>
+    <div class="container">
+      <h1>
+        🪴 <br />
+        House Plant MVP
+      </h1>
+      <h2>For beginners who want a champion team of greenery</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/550/original/spider-plants-chlorophytum-definition-1902773-02-4fc579ee1b874f4ca148482782d163b6.jpg?1630714915"
+        width="400"
+      />
+      <h3><strong> Spider Plants 🕷</strong></h3>
+      <p class="spider">
+        Known as <em> Chlorophytum comosum </em>, is the LeBron of house plants.
+        This athlete thrives on low to bright indirect light conditions. It is
+        also on NASA's list of air purifying plants - meaning they help remove
+        toxins like fromaldahyde from the air. And, the best part, they are pet
+        friendly! So your sweet pup or kitten won't suffer for your love of
+        plants.
+      </p>
+
+      <hr />
+      <p>They also come in a few different varieties!</p>
+      <ul>
+        <li>Varigated</li>
+        <li>Reverse</li>
+        <li>Zebra</li>
+        <li>Bonnie</li>
+        <li>Hawaiian</li>
+        <li>Chlorophytum Capense</li>
+        <li>Chlorophytum Bichetii</li>
+      </ul>
+      <div class="wiki">
+        <a
+          href="https://en.wikipedia.org/wiki/Chlorophytum_comosum"
+          target="blank"
+          class="spidylink"
+          >Read more on Wikipedia</a
+        >
+      </div>
+      <button>Buy Now</button>
+      <div class="contact">
+        <span class="author"> Coded by: </span>
+        Kenya Caines
+        <span class="Email">Email: </span>
+        Hello@shecodes.io
+      </div>
+    </div>
+    <script>
+      function buyNow() {
+        let firstName = prompt("What is your first name?");
+        let plant = prompt("Are you interested in owning a spider plant?");
+        plant = plant.toLowerCase();
+        plant = plant.trim();
+        if (plant === "yes") {
+          alert(
+            " 😊 Sounds great, " +
+              firstName +
+              "! We will be in touch soon with your new plant!"
+          );
+        } else {
+          alert(
+            "😔 Sorry to hear that, " +
+              firstName +
+              ". Thanks for learning about Spider Plants!"
+          );
+        }
+      }
+      let buyNowButton = document.querySelector("button");
+      buyNowButton.addEventListener("click", buyNow);
+    </script>
+  </body>
+</html>  
